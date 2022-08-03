@@ -29,41 +29,32 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.DocId = new System.Windows.Forms.TextBox();
+            this.DocName = new System.Windows.Forms.TextBox();
+            this.DocExp = new System.Windows.Forms.TextBox();
+            this.DocPass = new System.Windows.Forms.TextBox();
+            this.DoctorGV = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DoctorGV)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkBlue;
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(970, 100);
             this.panel1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Berlin Sans FB Demi", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Tomato;
-            this.label1.Location = new System.Drawing.Point(299, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(382, 27);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "HOSPITAL MANAGEMENT SYSTEM";
             // 
             // label2
             // 
@@ -76,57 +67,71 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "DOCTOR";
             // 
-            // textBox1
+            // label1
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(67, 152);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(180, 29);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "Doctor ID";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Berlin Sans FB Demi", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Tomato;
+            this.label1.Location = new System.Drawing.Point(299, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(382, 27);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "HOSPITAL MANAGEMENT SYSTEM";
             // 
-            // textBox2
+            // DocId
             // 
-            this.textBox2.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox2.Location = new System.Drawing.Point(67, 197);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(180, 29);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.Text = "Doctor Name";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.DocId.BackColor = System.Drawing.Color.Gainsboro;
+            this.DocId.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.DocId.Location = new System.Drawing.Point(67, 152);
+            this.DocId.Name = "DocId";
+            this.DocId.Size = new System.Drawing.Size(180, 29);
+            this.DocId.TabIndex = 1;
+            this.DocId.Text = "Doctor ID";
+            this.DocId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox3
+            // DocName
             // 
-            this.textBox3.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox3.Location = new System.Drawing.Point(67, 244);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(180, 29);
-            this.textBox3.TabIndex = 3;
-            this.textBox3.Text = "YearsOfExperience";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.DocName.BackColor = System.Drawing.Color.Gainsboro;
+            this.DocName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.DocName.Location = new System.Drawing.Point(67, 197);
+            this.DocName.Name = "DocName";
+            this.DocName.Size = new System.Drawing.Size(180, 29);
+            this.DocName.TabIndex = 2;
+            this.DocName.Text = "Doctor Name";
+            this.DocName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox4
+            // DocExp
             // 
-            this.textBox4.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox4.Location = new System.Drawing.Point(67, 294);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(180, 29);
-            this.textBox4.TabIndex = 4;
-            this.textBox4.Text = "Password";
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.DocExp.BackColor = System.Drawing.Color.Gainsboro;
+            this.DocExp.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.DocExp.Location = new System.Drawing.Point(67, 244);
+            this.DocExp.Name = "DocExp";
+            this.DocExp.Size = new System.Drawing.Size(180, 29);
+            this.DocExp.TabIndex = 3;
+            this.DocExp.Text = "YearsOfExperience";
+            this.DocExp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // dataGridView1
+            // DocPass
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(436, 141);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(472, 328);
-            this.dataGridView1.TabIndex = 5;
+            this.DocPass.BackColor = System.Drawing.Color.Gainsboro;
+            this.DocPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.DocPass.Location = new System.Drawing.Point(67, 294);
+            this.DocPass.Name = "DocPass";
+            this.DocPass.Size = new System.Drawing.Size(180, 29);
+            this.DocPass.TabIndex = 4;
+            this.DocPass.Text = "Password";
+            this.DocPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // DoctorGV
+            // 
+            this.DoctorGV.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.DoctorGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DoctorGV.Location = new System.Drawing.Point(426, 152);
+            this.DoctorGV.Name = "DoctorGV";
+            this.DoctorGV.RowHeadersWidth = 120;
+            this.DoctorGV.Size = new System.Drawing.Size(482, 344);
+            this.DoctorGV.TabIndex = 5;
+            this.DoctorGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DoctorGV_CellContentClick);
             // 
             // button1
             // 
@@ -140,6 +145,7 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "Add";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -153,6 +159,7 @@
             this.button2.TabIndex = 7;
             this.button2.Text = "Update";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -166,6 +173,7 @@
             this.button3.TabIndex = 8;
             this.button3.Text = "Delete";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -179,6 +187,19 @@
             this.button4.TabIndex = 9;
             this.button4.Text = "Home";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Berlin Sans FB Demi", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Tomato;
+            this.label3.Location = new System.Drawing.Point(931, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(27, 27);
+            this.label3.TabIndex = 26;
+            this.label3.Text = "X";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // DoctorForm
             // 
@@ -190,18 +211,20 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.DoctorGV);
+            this.Controls.Add(this.DocPass);
+            this.Controls.Add(this.DocExp);
+            this.Controls.Add(this.DocName);
+            this.Controls.Add(this.DocId);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DoctorForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DoctorForm";
+            this.Load += new System.EventHandler(this.DoctorForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DoctorGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,14 +235,15 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox DocId;
+        private System.Windows.Forms.TextBox DocName;
+        private System.Windows.Forms.TextBox DocExp;
+        private System.Windows.Forms.TextBox DocPass;
+        private System.Windows.Forms.DataGridView DoctorGV;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label3;
     }
 }
