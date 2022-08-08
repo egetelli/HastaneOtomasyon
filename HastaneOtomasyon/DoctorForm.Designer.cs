@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.DocId = new System.Windows.Forms.TextBox();
@@ -40,7 +41,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DoctorGV)).BeginInit();
             this.SuspendLayout();
@@ -55,6 +55,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(970, 100);
             this.panel1.TabIndex = 0;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Berlin Sans FB Demi", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Tomato;
+            this.label3.Location = new System.Drawing.Point(931, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(27, 27);
+            this.label3.TabIndex = 26;
+            this.label3.Text = "X";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -88,12 +100,13 @@
             this.DocId.TabIndex = 1;
             this.DocId.Text = "Doctor ID";
             this.DocId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.DocId.TextChanged += new System.EventHandler(this.DocId_TextChanged);
             // 
             // DocName
             // 
             this.DocName.BackColor = System.Drawing.Color.Gainsboro;
             this.DocName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.DocName.Location = new System.Drawing.Point(67, 197);
+            this.DocName.Location = new System.Drawing.Point(67, 198);
             this.DocName.Name = "DocName";
             this.DocName.Size = new System.Drawing.Size(180, 29);
             this.DocName.TabIndex = 2;
@@ -188,18 +201,6 @@
             this.button4.Text = "Home";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Berlin Sans FB Demi", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Tomato;
-            this.label3.Location = new System.Drawing.Point(931, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(27, 27);
-            this.label3.TabIndex = 26;
-            this.label3.Text = "X";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // DoctorForm
             // 

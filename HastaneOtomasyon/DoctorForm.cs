@@ -106,5 +106,10 @@ namespace HastaneOtomasyon
         {
             Application.Exit();
         }
+
+        private void DocId_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
